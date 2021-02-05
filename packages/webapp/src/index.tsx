@@ -16,5 +16,5 @@ WebappComponent.then((element) => {
   /**
    * Access DOM node when it's mounted
    */
-  console.log('gestao-normas-webapp is mounted on the DOM', element);
+  console.log('gestao-contratos-webapp is mounted on the DOM', element);
 });

@@ -1,4 +1,4 @@
-# gestao-normas-service
+# gestao-contratos-service
 
 ## Installation
 

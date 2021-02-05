@@ -104,7 +104,7 @@ export const App: FunctionComponent = () => {
                     <td className="d-none d-md-table-cell">{n.titulo}</td>
                     <td className="d-none d-md-table-cell">{n.palavrasChave.join(', ')}</td>
                     <td>
-                      <a type="button" className="btn btn-primary" target="_blank" rel="noopener noreferrer" href={`https://sigo.blob.core.windows.net/gestao-normas/${n.filename}`}>
+                      <a type="button" className="btn btn-primary" target="_blank" rel="noopener noreferrer" href={`https://sigo.blob.core.windows.net/gestao-contratos/${n.filename}`}>
                         <i className="bi-download" />
                       </a>
                     </td>
