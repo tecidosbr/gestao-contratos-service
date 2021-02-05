@@ -1,3 +1,38 @@
+# [4.3.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.2.1...v4.3.0) (2021-02-05)
+
+
+### Bug Fixes
+
+* auth level ([5e3c545](https://github.com/tecidosbr/gestao-contratos/commit/5e3c54577067c422b7140a91dd8159a17e3dcefc))
+* badges ([6bec22f](https://github.com/tecidosbr/gestao-contratos/commit/6bec22ff105fb72a9c3dc7c7e55f8c6eeee26e50))
+* build as production ([cf9be12](https://github.com/tecidosbr/gestao-contratos/commit/cf9be12252dac19cb578084810b514c39d786647))
+* ci pipeline ([56acd9a](https://github.com/tecidosbr/gestao-contratos/commit/56acd9a408990f252a06e21a0774f019d1bd75f4))
+* ci pipeline ([1b1991b](https://github.com/tecidosbr/gestao-contratos/commit/1b1991b727f7d51f9c708c248ca232bd4c5f0bfc))
+* ci pipeline ([90ffe70](https://github.com/tecidosbr/gestao-contratos/commit/90ffe704d384e156dc92d01d91bf3a4966c8d8e2))
+* ci pipeline ([a24f195](https://github.com/tecidosbr/gestao-contratos/commit/a24f195b0f74ec376e0d0b63474b95ef6cd899f9))
+* clean up build ([0977aa3](https://github.com/tecidosbr/gestao-contratos/commit/0977aa354f6aa5dab0a0e84838d586f681d74747))
+* deploy env ([cdde9e5](https://github.com/tecidosbr/gestao-contratos/commit/cdde9e5b31b5e8f4224f26965199f6f9895f81da))
+* deploy pipeline ([03fd12c](https://github.com/tecidosbr/gestao-contratos/commit/03fd12cce7ab003efb01b5efa8a911cba2d1651c))
+* devops pipeline ([547cd32](https://github.com/tecidosbr/gestao-contratos/commit/547cd32c6dfd4c2a22ea6e0130fd0e2495e7c484))
+* enhance production build ([4989a96](https://github.com/tecidosbr/gestao-contratos/commit/4989a9622317eff61ba26ae7b431dcaabd3dc022))
+* env ([c92a53e](https://github.com/tecidosbr/gestao-contratos/commit/c92a53e509817b485a75718beafe68b7c2f7bf80))
+* envs ([dd5cd28](https://github.com/tecidosbr/gestao-contratos/commit/dd5cd28380226333dad7c81a6d8e21f6daaa91da))
+* eslint issues ([e2c097d](https://github.com/tecidosbr/gestao-contratos/commit/e2c097d45deec3c2ae1d0644124ce8401f55f37a))
+* lint issues ([f79012b](https://github.com/tecidosbr/gestao-contratos/commit/f79012bdd6a0d4e65499ecbaab6614a8b0a1e67c))
+* prune ([4e14493](https://github.com/tecidosbr/gestao-contratos/commit/4e144934426b14d9234ec11e308fbb9c399207dd))
+* README ([e13c820](https://github.com/tecidosbr/gestao-contratos/commit/e13c820408f87217d5632c7ee171677eae49739b))
+* remove unused .npmignore ([a2860c5](https://github.com/tecidosbr/gestao-contratos/commit/a2860c5637ea73c0b6067e2a6909f7e037b67a82))
+* Revert "fix: auth level" ([78571e7](https://github.com/tecidosbr/gestao-contratos/commit/78571e7cc72a364fc2342c50b04f2dad98b1f159))
+* tests ([966c00c](https://github.com/tecidosbr/gestao-contratos/commit/966c00cb5c56b9a711ecf65b6c39a6531c951a4b))
+* Update azurex-pipelines.yml for Azure Pipelines ([7ea25b9](https://github.com/tecidosbr/gestao-contratos/commit/7ea25b98a79806bd98a8e1c45ececb7fbf087e46))
+* use only lcov as reporter ([9f0d7e9](https://github.com/tecidosbr/gestao-contratos/commit/9f0d7e9ea234583a19f24083a25573fffcac48a3))
+
+
+### Features
+
+* add custom iss config ([90ecb12](https://github.com/tecidosbr/gestao-contratos/commit/90ecb12f68baa6d57e0bbf3e91ee41e99f58d57d))
+* use azure-api for service requests ([da4041f](https://github.com/tecidosbr/gestao-contratos/commit/da4041f4027abd6b24ddd0935ea8b0d6a058aad6))
+
 ## [1.0.13](https://github.com/tecidosbr/gestao-contratos/compare/v1.0.12...v1.0.13) (2021-02-04)
 
 
