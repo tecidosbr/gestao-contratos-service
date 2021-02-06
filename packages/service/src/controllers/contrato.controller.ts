@@ -5,7 +5,7 @@ import { ContratoService } from '../service';
 
 @Controller('contrato')
 export class ContratoController {
-  public constructor(private readonly service: ContratoService) { }
+  public constructor(private readonly service: ContratoService) {}
 
   @Post()
   @ApiOkResponse({
