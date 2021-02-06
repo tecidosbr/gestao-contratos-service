@@ -1,19 +1,22 @@
 version: 1
 update_configs:
-  - package-ecosystem: npm
+  - package_manager: "javascript"
     directory: "/"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
+    update_schedule: "weekly"
+    commit_message:
+      prefix: "chore"
+      include_scope: true
 
-  - package-ecosystem: npm
+  - package_manager: "javascript"
     directory: "/packages/service"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
+    update_schedule: "weekly"
+    commit_message:
+      prefix: "chore"
+      include_scope: true
 
-  - package-ecosystem: npm
+  - package_manager: "javascript"
     directory: "/packages/webapp"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
+    update_schedule: "weekly"
+    commit_message:
+      prefix: "chore"
+      include_scope: true
