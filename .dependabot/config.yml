@@ -1,19 +1,19 @@
 version: 1
-updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
+update_configs:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
 
-- package-ecosystem: npm
-  directory: "/packages/service"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
+  - package-ecosystem: npm
+    directory: "/packages/service"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
 
-- package-ecosystem: npm
-  directory: "/packages/webapp"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
+  - package-ecosystem: npm
+    directory: "/packages/webapp"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
