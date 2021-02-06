@@ -1,3 +1,16 @@
+# [4.6.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.5.0...v4.6.0) (2021-02-06)
+
+
+### Bug Fixes
+
+* await delete ([a1ed520](https://github.com/tecidosbr/gestao-contratos/commit/a1ed520dca0844d92a51912aaf5574786cc8d2e3))
+
+
+### Features
+
+* create crud service ([beea105](https://github.com/tecidosbr/gestao-contratos/commit/beea10527d9dfbc66f693092b2bff47b99898722))
+* implement frontend ([ae1b612](https://github.com/tecidosbr/gestao-contratos/commit/ae1b612565e13371ec53c3e30e17f53ad16204cf))
+
 # [4.5.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.4.1...v4.5.0) (2021-02-06)
 
 
