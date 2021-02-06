@@ -6,7 +6,7 @@ export class ContratoService {
   constructor(
     @Inject('CONTRATO_REPOSITORY')
     private repository: Repository<ContratoDto>,
-  ) { }
+  ) {}
 
   public async create(contrato: ContratoDto): Promise<ContratoDto> {
     return this.repository.save(contrato);
