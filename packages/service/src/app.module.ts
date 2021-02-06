@@ -1,10 +1,9 @@
-import { InMemoryDBModule } from '@nestjs-addons/in-memory-db';
 import { Module } from '@nestjs/common';
 import { controllers } from './controllers';
-import { providers } from './service';
+import { providers as serviceProviders } from './service';
+import { databaseProviders } from './database.providers';
 @Module({
-  imports: [InMemoryDBModule.forRoot({})],
   controllers,
-  providers,
+  providers: [...serviceProviders, ...databaseProviders],
 })
 export class AppModule {}

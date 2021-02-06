@@ -1,15 +1,7 @@
 import { Provider } from '@nestjs/common';
 
-import { ComiteService } from './comite.service';
-import { IcsService } from './ics.service';
-import { NormaService } from './norma.service';
-import { OrganismoService } from './organismo.service';
+import { ContratoService } from './contrato.service';
 
-export { ComiteService, IcsService, NormaService, OrganismoService };
+export { ContratoService };
 
-export const providers: Provider[] = [
-  ComiteService,
-  IcsService,
-  NormaService,
-  OrganismoService,
-];
+export const providers: Provider[] = [ContratoService];
