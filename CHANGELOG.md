@@ -1,3 +1,10 @@
+# [4.5.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.4.1...v4.5.0) (2021-02-06)
+
+
+### Features
+
+* add id token to fetch ([af137d3](https://github.com/tecidosbr/gestao-contratos/commit/af137d3e2d2b9bed57c684592f78f006de8851c6))
+
 ## [4.4.1](https://github.com/tecidosbr/gestao-contratos/compare/v4.4.0...v4.4.1) (2021-02-06)
 
 
