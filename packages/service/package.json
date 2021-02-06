@@ -1,6 +1,6 @@
 {
   "name": "gestao-contratos-service",
-  "version": "4.4.0",
+  "version": "4.4.1",
   "description": "",
   "author": "",
   "private": true,
@@ -101,7 +101,8 @@
     "@nestjs/core",
     "@nestjs/platform-express",
     "@nestjs/swagger",
-    "axios",
-    "reflect-metadata"
+    "mssql",
+    "reflect-metadata",
+    "swagger-ui-express"
   ]
 }
