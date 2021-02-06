@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.3.0...v4.4.0) (2021-02-06)
+
+
+### Features
+
+* add dependabot ([f268487](https://github.com/tecidosbr/gestao-contratos/commit/f268487ab8a4f706cea69145811a9d7a41bafa23))
+
 # [4.3.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.2.1...v4.3.0) (2021-02-05)
 
 
