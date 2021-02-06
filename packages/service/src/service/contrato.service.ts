@@ -18,6 +18,6 @@ export class ContratoService {
 
   public async remove(id: number): Promise<void> {
     const [e] = await this.repository.findByIds([id]);
-    this.repository.delete(e);
+    await this.repository.delete(e);
   }
 }
