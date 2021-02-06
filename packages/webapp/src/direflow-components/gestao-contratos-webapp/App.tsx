@@ -1,8 +1,8 @@
-import React, { FunctionComponent, useState } from 'react';
-import { useForm } from "react-hook-form";
+import React from 'react';
 
-import { IcsListDto, NormaListDto, SearchNormaDto } from "../../../../service/src/dto";
-import { useFetchApi } from '../../api';
+import { ContratoDto, ContratoListDto } from "../../../../service/src/dto";
+import { Form } from './Form';
+import { Table } from './Table';
 
 const bodyStyle = {
   margin: 0,
@@ -13,108 +13,60 @@ const bodyStyle = {
   color: '#212529'
 };
 
-export const App: FunctionComponent = () => {
-  const [searchNormaDto, setSearchNormaDto] = useState<Record<keyof SearchNormaDto, string>>({ search: '*', filter: '' });
+type Props = { idToken: string }
+type State = { contratos: ContratoDto[] };
+export class App extends React.Component<Props, State> {
+  public readonly state: State = {
+    contratos: [],
+  };
 
-  const { data: icss } = useFetchApi<IcsListDto>('ics');
-  const { data: normas } = useFetchApi<NormaListDto>(`norma/search?${new URLSearchParams(searchNormaDto)}`);
+  public async componentDidMount() {
+    await this.load();
+  }
 
-  const { register, handleSubmit, reset } = useForm<{
-    palavrasChave: string;
-    titulo: string;
-    ics: string;
-  }>();
-
-  const onSubmit = handleSubmit((data) => {
-    const search: string[] = [];
-    const filters: string[] = [];
-
-    if (data.palavrasChave) {
-      search.push(`palavrasChave: "${data.palavrasChave}"`);
-    }
-
-    if (data.titulo) {
-      search.push(`titulo: "${data.titulo}"`);
-    }
-
-    if (data.ics) {
-      filters.push(`ics eq '${icss?.list.find(e => e.description === data.ics)?.id}'`);
-    }
-    setSearchNormaDto({
-      search: search.join(' and '),
-      filter: filters.join(' and ')
+  private readonly load = async (): Promise<void> => {
+    const res = await fetch(`${process.env.SERVICE_URL}/contrato`, {
+      headers: {
+        'Authorization': `Bearer ${this.props.idToken}`,
+      }
     });
-  });
 
-  return (
-    <div style={bodyStyle}>
-      <div className="card my-3">
-        <div className="card-body">
-          <h5 className="card-title">
-            <i className="bi-filter" />
-            <span>Filtros</span>
-          </h5>
-          <form onSubmit={onSubmit}>
-            <div className="row">
-              <div className="mb-3 col col-12 col-md-6">
-                <label className="form-label">Titulo</label>
-                <input ref={register} type="text" className="form-control" name="titulo" />
-              </div>
-              <div className="mb-3 col col-12 col-md-6">
-                <label className="form-label">Palavras Chave</label>
-                <input ref={register} type="text" className="form-control" name="palavrasChave" />
-              </div>
-              <div className="mb-3 col col-12 col-md-6">
-                <label className="form-label">ICS/CIN</label>
-                <input ref={register} className="form-control" list="icss" name="ics" />
-                <datalist id="icss">
-                  {icss?.list?.map(c => (
-                    <option key={c.id} value={c.description} />
-                  ))}
-                </datalist>
-              </div>
-            </div>
-            <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-              <div className="btn-group me-2">
-                <input type="submit" className="btn btn-primary" value="Buscar" />
-              </div>
-              <div className="btn-group">
-                <button className="btn btn-outline-secondary" onClick={() => reset()}>Limpar</button>
-              </div>
-            </div>
-          </form>
-        </div>
+    const { list: contratos }: ContratoListDto = await res.json();
+
+    this.setState({ contratos });
+  }
+
+  private readonly save = async (contrato: ContratoDto): Promise<void> => {
+    await fetch(`${process.env.SERVICE_URL}/contrato`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${this.props.idToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(contrato),
+    });
+    alert(`Contrato cadastrado com sucesso`);
+    this.load();
+  }
+
+  private readonly remove  = async (id: number | string): Promise<void> => {
+    await fetch(`${process.env.SERVICE_URL}/contrato/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${this.props.idToken}`,
+      }
+    });
+    alert(`Contrato ${id} removido com sucesso`);
+    this.load();
+  }
+
+  public render() {
+
+    return (
+      <div style={bodyStyle}>
+        <Form onSubmit={this.save} />
+        <Table contratos={this.state.contratos} onDelete={this.remove} />
       </div>
-      <div className="card my-3">
-        <div className="card-body">
-          <div className="table-responsive">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col">Código</th>
-                  <th scope="col" className="d-none d-md-table-cell">Titulo</th>
-                  <th scope="col" className="d-none d-md-table-cell">Palavras Chave</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                {normas?.list?.map(n => (
-                  <tr key={n.id}>
-                    <th>{n.codigo}</th>
-                    <td className="d-none d-md-table-cell">{n.titulo}</td>
-                    <td className="d-none d-md-table-cell">{n.palavrasChave.join(', ')}</td>
-                    <td>
-                      <a type="button" className="btn btn-primary" target="_blank" rel="noopener noreferrer" href={`https://sigo.blob.core.windows.net/gestao-contratos/${n.filename}`}>
-                        <i className="bi-download" />
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
