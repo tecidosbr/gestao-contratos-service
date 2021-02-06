@@ -12,7 +12,6 @@ export class ContratoController {
     type: ContratoDto,
   })
   private async create(@Body() contrato: ContratoDto): Promise<ContratoDto> {
-    console.log(contrato);
     return this.service.create(contrato);
   }
 
