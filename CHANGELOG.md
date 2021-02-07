@@ -1,3 +1,10 @@
+## [4.7.1](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.0...v4.7.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* ignore node_modules ([2653ce8](https://github.com/tecidosbr/gestao-contratos/commit/2653ce832573ff2bafff7c23a4ee1f8183e9ab33))
+
 # [4.7.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.3...v4.7.0) (2021-02-07)
 
 
