@@ -1,3 +1,10 @@
+## [4.6.3](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.2...v4.6.3) (2021-02-07)
+
+
+### Bug Fixes
+
+* default properties ([08dbad9](https://github.com/tecidosbr/gestao-contratos/commit/08dbad91cb17d8b85ec3a0526dad06406e65b41f))
+
 ## [4.6.2](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.1...v4.6.2) (2021-02-07)
 
 
