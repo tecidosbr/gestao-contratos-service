@@ -1,3 +1,10 @@
+## [4.6.1](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.0...v4.6.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* service url ([c26618f](https://github.com/tecidosbr/gestao-contratos/commit/c26618fbcdd93e6bfd72349c5249fcb2416bbbb8))
+
 # [4.6.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.5.0...v4.6.0) (2021-02-06)
 
 
