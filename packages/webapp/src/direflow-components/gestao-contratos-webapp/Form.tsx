@@ -18,7 +18,7 @@ export const Form: React.FunctionComponent<{ onSubmit: (c: ContratoDto) => void 
               <input ref={register} type="text" className="form-control" name="descricao" required />
             </div>
             <div className="mb-3 col col-12 col-md-6">
-              <label className="form-label">Palavras Chave</label>
+              <label className="form-label">Inicio</label>
               <input ref={register} type="date" className="form-control" name="inicio" required />
             </div>
             <div className="mb-3 col col-12 col-md-6">
