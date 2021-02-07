@@ -1,3 +1,10 @@
+## [4.7.2](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.1...v4.7.2) (2021-02-07)
+
+
+### Bug Fixes
+
+* synchronize ([2e6cdf0](https://github.com/tecidosbr/gestao-contratos/commit/2e6cdf06a742fda584d3087b4ed39c8150f7ca78))
+
 ## [4.7.1](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.0...v4.7.1) (2021-02-07)
 
 
