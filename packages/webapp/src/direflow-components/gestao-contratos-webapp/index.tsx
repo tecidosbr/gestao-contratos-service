@@ -6,6 +6,9 @@ export default DireflowComponent.create({
   configuration: {
     tagname: 'gestao-contratos-webapp',
   },
+  properties: {
+    idToken: '',
+  },
   plugins: [
     {
       name: 'font-loader',
