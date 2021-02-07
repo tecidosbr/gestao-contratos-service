@@ -1,3 +1,10 @@
+# [4.7.0](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.3...v4.7.0) (2021-02-07)
+
+
+### Features
+
+* do not break on missing array ([dc78f1a](https://github.com/tecidosbr/gestao-contratos/commit/dc78f1a7e58bdf68adc7bbff83654d6d64b200bb))
+
 ## [4.6.3](https://github.com/tecidosbr/gestao-contratos/compare/v4.6.2...v4.6.3) (2021-02-07)
 
 
