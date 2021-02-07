@@ -31,7 +31,7 @@ export class App extends React.Component<Props, State> {
       }
     });
 
-    const { list: contratos }: ContratoListDto = await res.json();
+    const { list: contratos = [] }: ContratoListDto = await res.json();
 
     this.setState({ contratos });
   }

@@ -26,7 +26,7 @@ export const Table: React.FunctionComponent<Props> = ({ contratos, onDelete }) =
               </tr>
             </thead>
             <tbody>
-              {contratos.map(c => (
+              {contratos?.map(c => (
                 <tr key={c.id}>
                   <th>{c.id}</th>
                   <td>{c.descricao}</td>
