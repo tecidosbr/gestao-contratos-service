@@ -13,7 +13,7 @@ export const databaseProviders = [
         password: 'next$2020',
         database: 'gestao-contratos-db',
         entities: [`${__dirname}/model/*.entity.{ts,js}`],
-        synchronize: true,
+        synchronize: false,
       }),
   },
   {
