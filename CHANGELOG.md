@@ -1,3 +1,10 @@
+## [4.7.3](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.2...v4.7.3) (2021-02-07)
+
+
+### Bug Fixes
+
+* data id ([3bd84dc](https://github.com/tecidosbr/gestao-contratos/commit/3bd84dcdbc52a1adc9fa23521150dfb02c17e4cb))
+
 ## [4.7.2](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.1...v4.7.2) (2021-02-07)
 
 
