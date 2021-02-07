@@ -34,7 +34,7 @@ export const Table: React.FunctionComponent<Props> = ({ contratos, onDelete }) =
                   <td className="d-none d-md-table-cell">{new Date(c.fim).toLocaleDateString()}</td>
                   <td>
                     <button type="button" className="btn btn-danger" data-id={c.id} onClick={onDeleteCb}>
-                      <i className="bi-trash" />
+                      <i className="bi-trash" data-id={c.id} />
                     </button>
                   </td>
                 </tr>
