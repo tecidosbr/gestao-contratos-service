@@ -1,3 +1,10 @@
+## [4.7.4](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.3...v4.7.4) (2021-03-24)
+
+
+### Bug Fixes
+
+* remove wrong title ([4c3b080](https://github.com/tecidosbr/gestao-contratos/commit/4c3b0803f3528e48b25624d00a1ef5b7067684f7))
+
 ## [4.7.3](https://github.com/tecidosbr/gestao-contratos/compare/v4.7.2...v4.7.3) (2021-02-07)
 
 
