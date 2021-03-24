@@ -8,9 +8,6 @@ export const Form: React.FunctionComponent<{ onSubmit: (c: ContratoDto) => void 
   return (
     <div className="card my-3">
       <div className="card-body">
-        <h5 className="card-title">
-          <span>Filtros</span>
-        </h5>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="mb-3 col col-12">
