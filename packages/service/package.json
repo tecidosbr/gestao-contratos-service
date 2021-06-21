@@ -27,7 +27,7 @@
     "@nestjs/azure-func-http": "^0.6.0",
     "@nestjs/common": "^7.6.11",
     "@nestjs/core": "^7.6.11",
-    "@nestjs/platform-express": "^7.6.11",
+    "@nestjs/platform-express": "^7.6.18",
     "@nestjs/swagger": "^4.7.12",
     "mssql": "^6.3.1",
     "reflect-metadata": "^0.1.13",
